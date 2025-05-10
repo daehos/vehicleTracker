@@ -1,54 +1,88 @@
-# React + TypeScript + Vite
+# 🚌 MBTA Vehicle Tracker
+A simple web app to track MBTA buses in real time. You can see vehicle positions, status (like stopped or moving), and filter them by route and trip. Cocok banget buat belajar integrasi API + UI interaktif.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Features
 
-Currently, two official plugins are available:
+- Real-time vehicle tracking
+- Filter vehicles by route and trip
+- Pagination support
+- Responsive design
+- Loading indicators & error messages for better UX
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Tech Stack
 
-## Expanding the ESLint configuration
+- React + TypeScript
+- Tailwind CSS
+- React Toastify for notifications
+- Vite for build tooling
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Installation
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Make sure you have:
+- Node.js v14+
+- npm v6+
+
+1. Clone the repository:
+
+```bash
+git clone [your-repository-url]
+cd vehicleTracker
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+## Running the Application
+
+To start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173` (or another port if 5173 is in use).
+
+## Building for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+To preview the production build:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── hooks/         # Custom React hooks
+├── pages/         # Page components
+├── services/      # API and service functions
+└── types/         # TypeScript type definitions
+```
+
+## Contributing
+Wanna contribute or play around?
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/cool-feature`)
+3. Commit your changes (`git commit -m 'Add some cool feature'`)
+4. Push to the branch (`git push origin feature/cool-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - use it however you like.
+
+## Thanks to
+
+- MBTI for the open API
+- All contributors who have helped with the project
