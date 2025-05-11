@@ -1,5 +1,6 @@
 # 🚌 MBTA Vehicle Tracker
-A simple web app to track MBTA buses in real time. You can see vehicle positions, status (like stopped or moving), and filter them by route and trip. Cocok banget buat belajar integrasi API + UI interaktif.
+
+A simple web app to track MBTA buses in real time. You can see vehicle positions, status (like stopped or moving), and filter them by route and trip. Built mainly for learning purposes.
 
 ## 🚀 Features
 
@@ -19,13 +20,14 @@ A simple web app to track MBTA buses in real time. You can see vehicle positions
 ## Installation
 
 Make sure you have:
+
 - Node.js v14+
 - npm v6+
 
 1. Clone the repository:
 
 ```bash
-git clone [your-repository-url]
+git clone https://github.com/daehos/vehicleTracker.git
 cd vehicleTracker
 ```
 
@@ -71,7 +73,9 @@ src/
 ```
 
 ## Contributing
+
 Wanna contribute or play around?
+
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/cool-feature`)
 3. Commit your changes (`git commit -m 'Add some cool feature'`)
