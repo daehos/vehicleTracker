@@ -1,6 +1,6 @@
 # 🚌 MBTA Vehicle Tracker
 
-A simple web app to track MBTA buses in real time. You can see vehicle positions, status (like stopped or moving), and filter them by route and trip. Cocok banget buat belajar integrasi API + UI interaktif.
+A simple web app to track MBTA buses in real time. You can see vehicle positions, status (like stopped or moving), and filter them by route and trip. Built mainly for learning purposes.
 
 ## 🚀 Features
 
