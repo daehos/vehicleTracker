@@ -67,9 +67,13 @@ const VehicleCard = ({ vehicle }: VehicleCardProps) => {
             {new Date(vehicle.attributes.updated_at).toLocaleTimeString()}
           </div>
         </div>
-        <div className="mt-2 text-sm text-gray-600">
-          <p>🚏 Route: {vehicle.relationships.route.data.id}</p>
-          <p>🎫 Trip: {vehicle.relationships.trip.data.id}</p>
+        <div className=" mt-2 text-sm text-gray-600">
+          <p className="mr-5">
+          📍 Latitude & Longitude:
+          </p>
+          <p> 
+            {vehicle.attributes.latitude.toFixed(6)}{" "}{vehicle.attributes.longitude.toFixed(6)}
+          </p>
         </div>
       </div>
 
