@@ -186,7 +186,7 @@ const Home = () => {
 
         {/* Items per page selector */}
         <div className="flex items-center gap-2">
-          <span className="text-sm text-gray-600">Data per halaman:</span>
+          <span className="text-sm text-gray-600">Vehicle per page:</span>
           <select
             value={pageSize}
             onChange={(e) => handlePageSizeChange(Number(e.target.value))}
@@ -220,7 +220,7 @@ const Home = () => {
         {/* Data range display */}
         <div className="text-sm text-gray-600">
           {vehicles.length > 0
-            ? `Menampilkan ${startItem}-${endItem} dari ${totalCount} Data`
+            ? `Showing ${startItem}-${endItem} from ${totalCount} Data`
             : "Tidak ada data yang ditampilkan"}
         </div>
 
